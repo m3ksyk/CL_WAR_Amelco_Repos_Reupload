@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>list of products</title>
+    <style>
+        .even {
+            background: gray;
+        }
+        table, td,tr{
+            border: 1px black;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr th:each="product, iterStat: ${products}" th:class="${iterStat.even}? 'even'">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${product.description}"></td>
+        <td th:text="${#numbers.formatDecimal(product.price, 0, 'COMMA', 4, 'POINT')}"></td>
+        <td th:text="${#temporals.format(product.availableFrom, 'dd-MM-yyyy')}"></td>
+
+    </tr>
+</table>
+<hr>
+<table>
+    <tr  th:each="product, iterStat: ${products.?[10 > price]}" th:class="${iterStat.even}? 'even'">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${product.description}"></td>
+        <td th:text="${#numbers.formatDecimal(product.price, 0, 'COMMA', 4, 'POINT')}"></td>
+        <td th:text="${#temporals.format(product.availableFrom, 'dd-MM-yyyy')}"></td>
+
+    </tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr th:each="article, iterStat: ${articles}" th:class="${iterStat.even}? 'even'">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${article.title}"></td>
+        <td th:text="${article.rating}"></td>
+        <td th:text="${article.content}"></td>
+        <td th:text="${article.categories}"></td>
+        <td th:text="${article.authors}"></td>
+        <td th:text="${article.draft}"></td>
+
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/article/form}" th:object="${article}" method="post">
+
+    <p>title: <input type="text" th:field="*{title}" /></p>
+    <p>rating: <input type="text" th:field="*{rating}" /></p>
+    <p>content: <input type="text" th:field="*{content}" /></p>
+    <p><th:select multiple="multiple" path="categories" th:field="*{categories}"/></p>
+    <p><th:select multiple="multiple" path="authors" th:field="*{authors}"/></p>
+    <p>draft: <checkbox  path="draft" th:field="*{draft}"/></p>
+
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+</body>
+</html>

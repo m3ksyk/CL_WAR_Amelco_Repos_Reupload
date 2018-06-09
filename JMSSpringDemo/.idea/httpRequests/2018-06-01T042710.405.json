@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-06-01T14:27:10.316+0000",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "message": "Request method 'GET' not supported",
+  "path": "/queue/coderslab"
+}

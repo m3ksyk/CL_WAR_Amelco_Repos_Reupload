@@ -1,0 +1,144 @@
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T043134.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042841.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042827.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042815.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042812.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042745.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042740.200.txt
+
+###
+
+GET http://localhost:8080/receive/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042737.200.txt
+
+###
+
+GET http://localhost:8080/queue/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042710.405.json
+
+###
+
+POST http://localhost:8080/queue/coderslab?message=dududu&message=dddddd&message=dududu&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/queue/coderslab?message=dududu&message=dddddd&message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T042028.500.json
+
+###
+
+POST localhost:8080/queue/coderslab?message=dududu&message=dddddd
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST localhost:8080/queue/coderslab?message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST localhost:8080/queue/coderslab?message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST localhost:8080/queue/coderslab?message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST localhost:8080/queue/coderslab?message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST ocalhost:8080/queue/coderslab?message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/http://localhost:8080/queue/coderslab?message=dududu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T041803.404.json
+
+###
+
+POST http://localhost:8080/http://localhost:8080/queue/coderslab?msg=dudu
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-06-01T041708.404.json
+
+###
+

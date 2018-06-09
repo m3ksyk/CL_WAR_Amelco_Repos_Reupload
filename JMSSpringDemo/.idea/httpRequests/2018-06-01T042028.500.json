@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-06-01T14:20:28.575+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Uncategorized exception occurred during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://10.20.142.99:61616. Reason: java.net.SocketException: Socket closed",
+  "path": "/queue/coderslab"
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>Login View</title>
+</head>
+<body>
+
+<span sec:authorize="isAuthenticated()">
+        <p>Witaj, <span sec:authentication="name"></span></p>
+    <p>Twoje uprawnienia: <span sec:authentication="authorities"></span></p>
+        <form th:action="@{/logout}" method="POST">
+            <input type="submit" value="Wyloguj"/>
+        </form>
+    </span>
+
+<span sec:authorize="!isAuthenticated()">
+        Musisz się <a th:href="@{/login}">zalogować</a>.
+    </span>
+
+
+</body>
+</html>

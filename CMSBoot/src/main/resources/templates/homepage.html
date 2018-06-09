@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr th:each="article, iterStat: ${articles}" th:class="${iterStat.even}? 'even'">
+            <td th:text="${iterStat.count}"></td>
+            <td th:text=${article.title}></td>
+            <td th:text=${article.created}></td>
+            <td th:text=${article.content}></td>
+
+        </tr>
+    </table>
+<hr>
+    <table>
+        <tr th:each="category, iterStat: ${categories}" th:class="${iterStat.even}? 'even'">
+            <td th:text="${iterStat.count}"></td>
+            <td th:text=${category.name}></td>
+            <td><a href="/category/read/${category.id}">view articles </a></td>
+
+        </tr>
+    </table>
+</body>
+</html>

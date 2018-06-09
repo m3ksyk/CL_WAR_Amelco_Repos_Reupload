@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>hello</title>
+</head>
+<body>
+<p th:text="'Hello Thymeleaf'" />
+<p th:text="${message}" />
+<p th:text="|Dzisiaj mamy ${now.getDayOfYear()} dzień roku|"></p>
+</body>
+</html>

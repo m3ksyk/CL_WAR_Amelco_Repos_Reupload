@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="helloWorld" class="pl.coderslab.beans.HelloWorld">
+            <!--<constructor-arg name="message" value="Witaj SPRING"/>-->
+            <property name="message" value="Witaj SPRING - by setter"/>
+        </bean>
+        <bean id="emailService" class="pl.coderslab.beans.EmailService"/>
+
+        <bean id="messageService" class="pl.coderslab.beans.EmailService" />
+        <bean id="messageSender" class="pl.coderslab.beans.MessageSender">
+        <constructor-arg ref="messageService"/>
+        <property name="message" value="MESSAGE FROM XML"/>
+    </bean>
+</beans>

@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+
+<form th:action="@{/draft/updateform/{id}}" th:object="${article}" method="post">
+    <th:hidden path="id" value="${id}" />
+    <p>title: <input type="text" th:field="*{title}" /></p>
+    <p>content: <input type="text" th:field="*{content}" /></p>
+    <th:hidden path="draft" value="${true}" />
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+
+</body>
+</html>

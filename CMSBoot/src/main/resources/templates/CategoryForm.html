@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+<form th:action="@{/category/form}" th:object="${category}" method="post">
+
+    <p>name: <input type="text" th:field="*{name}" /></p>
+    <p>description: <input type="text" th:field="*{description}" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+
+</body>
+</html>

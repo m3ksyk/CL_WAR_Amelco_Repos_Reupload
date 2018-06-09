@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="category, iterStat: ${categories}" th:class="${iterStat.even}? 'even'">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${category.name}"></td>
+        <td><a href="/category/deleteauthor/${category.id}"> delete </a> </td>
+        <td><a href="/category/updateform/${category.id}"> edit </a> </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
